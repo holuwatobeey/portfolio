@@ -55,7 +55,7 @@
         <!--Preloader-->
             
         <?php
-            if(isset($_POST['submit'])){
+            if(isset($_POST['email'])){
             $Name = "Name:".$_POST['name']."
             ";
             $Email = "Email:".$_POST['email']."
