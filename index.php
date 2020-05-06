@@ -54,76 +54,26 @@
         </div>
         <!--Preloader-->
             
-            <?php
-    if(isset($_POST['submit'])) {
-            
-     
-        function died($error) {
-            // your error code can go here
-            echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-            echo "These errors appear below.<br /><br />";
-            echo $error."<br /><br />";
-            echo "Please go back and fix these errors.<br /><br />";
-            die();
-        }
-     
-     
-        // validation expected data exists
-        if(!isset($_POST['name']) ||
-            !isset($_POST['email']) ||
-            !isset($_POST['message'])){
-            died('We are sorry, but there appears to be a problem with the form you submitted.');       
-        }
-     
-         
-     
-         
-        $error_message = "";
-        $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-     
-      if(!preg_match($email_exp,$email_from)) {
-        $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-      }
-     
-        $string_exp = "/^[A-Za-z .'-]+$/";
-     
-      if(!preg_match($string_exp,$name)) {
-        $error_message .= 'The name you entered does not appear to be valid.<br />';
-      }
-     
-    
-     
-      if(strlen($messgae) < 2) {
-        $error_message .= 'The message you entered does not appear to be valid.<br />';
-      }
-     
-      if(strlen($error_message) > 0) {
-        died($error_message);
-      }
-     
-     
-
-     
-// create email headers
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "mikkycody@gmail.com";
-$subject = "Website request";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
-    ?>
-     
-    <!-- include your own success html here -->
-     
-    Thank you for contacting us. We will be in touch with you very soon.
-     
-    <?php
-     
-    }
-    ?>
+        <?php
+            if(isset($_POST['submit'])){
+            $Name = "Name:".$_POST['name']."
+            ";
+            $Email = "Email:".$_POST['email']."
+            ";
+            $Message = "Message:".$_POST['message']."
+            ";
+            $file=fopen("contactmsg.txt", "a");
+            fwrite($file, $Name);
+            fwrite($file, $Email);
+            fwrite($file, $Message);
+            fclose($file);
+                
+            echo '<script type="text/javascript">
+               myFunction();
+              </script>';
+               
+            }
+        ?>
         
         
         <!--Navbar Start-->
@@ -372,7 +322,7 @@ echo "Thank You!";
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea name="message" class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
+                                    <textarea name="message" class="form-control con-validate" id="contact-message" placeholder="How can I help you?" rows=6 ></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
@@ -429,6 +379,7 @@ echo "Thank You!";
 
         <!--Jquery js-->
         <script src="../code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <!--Bootstrap js-->
         <script src="js/bootstrap.min.js"></script>
@@ -446,6 +397,16 @@ echo "Thank You!";
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!--Site Main js-->
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            function myFunction(){
+                    swal({ 
+                          title: "Success",
+                          text: "Thank you for contacting me. I will get back to you soon!",
+                          type: "success" 
+                    },
+
+            }
+        </script>
 
     </body>
 
