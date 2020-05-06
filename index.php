@@ -292,19 +292,19 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
-                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength=3 >
+                                    <input name="name" type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength=3 >
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <!--email-->
-                                    <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email" >
+                                    <input name="email" type="email" class="form-control con-validate" id="contact-email" placeholder="Email" >
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
+                                    <textarea name="message" class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
-                                    <button id="contact-submit" class="mt-30 main-btn">
+                                    <button id="contact-submit" type="submit" class="mt-30 main-btn">
                                         Send Message
                                     </button>
                                 </div>
