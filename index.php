@@ -62,7 +62,7 @@
             ";
             $Message = "Message:".$_POST['message']."
             ";
-            $file=fopen("contactmsg.txt", "a");
+            $file=fopen("contactmsg.txt", "w");
             fwrite($file, $Name);
             fwrite($file, $Email);
             fwrite($file, $Message);
