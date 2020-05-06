@@ -288,7 +288,7 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!--Contact Form-->
-                        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                        <form id='contact-form' method='POST' action="index.php"><input type='hidden' name='form-name' value='contactForm' />
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
