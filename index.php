@@ -288,7 +288,7 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!--Contact Form-->
-                        <form id='contact-form' method='POST' action="index.php"><input type='hidden' name='form-name' value='contactForm' />
+                        <form method='POST' action="index.php"><input type='hidden' name='form-name' value='contactForm' />
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
@@ -304,7 +304,7 @@
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
-                                    <button id="contact-submit" type="submit" class="mt-30 main-btn">
+                                    <button id="" type="submit" class="mt-30 main-btn">
                                         Send Message
                                     </button>
                                 </div>
