@@ -343,25 +343,18 @@
             <div class="container">
                 <div class="row text-center">
                    
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Phone No.</h5>
                             <p>(+234) 802 9201 14</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Email</h5>
                             <p>mikkycody@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5>Address</h5>
-                            <p>19, Oluwadare street, Somolu, Lagos, Nigeria.</p>
                         </div>
                     </div>
                 </div>
