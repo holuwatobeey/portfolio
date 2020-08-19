@@ -7,9 +7,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="Personal, Portfolio, Creative">
-        <meta name="description" content="Kalvin Portfolio Template">
-        <meta name="author" content="cosmos-themes">
-
+        
         <title>Mikkycody - My Portfolio</title>
 
         <!-- favicon -->
