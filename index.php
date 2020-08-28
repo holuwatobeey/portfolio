@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="row">
-                        <p>I offer high-end web development services
+                        <p style="padding:1%;">I offer high-end web development services
                                 for diverse needs. Mastering the use of the latest methods and tools to render
                                 appealing and user-friendly website design services, you can approach me for business
                                 website, eCommerce website design and web applications.</p>
