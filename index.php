@@ -211,8 +211,8 @@
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
                         <div class="item-content">
-                            <img src="images/portfolio/img-6.jpg" alt="">
-                            <div class="item-overlay">
+                           <a target="_blank" href="http://globalstreaming.herokuapp.com"> <img src="images/portfolio/img-6.jpg" alt=""></a>
+<!--                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
                                         <a href="http://globalstreaming.herokuapp.com">
@@ -220,37 +220,37 @@
                                         </a>
                                     </span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item design">
                         <div class="item-content">
-                            <img src="images/portfolio/img-2.jpg" alt="">
-                            <div class="item-overlay">
+                           <a target="_blank" href="http://havimarheadstart.com"> <img src="images/portfolio/img-2.jpg" alt=""></a>
+<!--                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
-                                        <a href="havimarheadstart.com">
+                                        <a href="http://havimarheadstart.com">
                                             <i class="fa fa-search"></i>
                                         </a>
                                     </span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                    
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item development application">
                         <div class="item-content">
-                            <img src="images/portfolio/img-5.jpg" alt="">
-                            <div class="item-overlay">
+                           <a target="_blank" href="https://demusicnavigators.herokuapp.com/"> <img src="images/portfolio/img-5.jpg" alt=""></a>
+<!--                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
                                         <a href="https://demusicnavigators.herokuapp.com/">
                                             <i class="fa fa-search"></i>
                                         </a>
                                     </span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
