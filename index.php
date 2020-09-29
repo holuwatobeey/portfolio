@@ -191,11 +191,11 @@
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
                         <div class="item-content">
-                            <img src="images/portfolio/img-6.jpg" alt="">
+                            <img src="images/portfolio/yray.png" alt="">
                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
-                                        <a href="http://globalstreaming.herokuapp.com">
+                                        <a href="https://yrayfx.com">
                                             <i class="fa fa-search"></i>
                                         </a>
                                     </span>
@@ -206,11 +206,11 @@
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item design">
                         <div class="item-content">
-                            <img src="images/portfolio/img-2.jpg" alt="">
+                            <img src="images/portfolio/havimar.png" alt="">
                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
-                                        <a href="havimarheadstart.com">
+                                        <a href="havimar-headstart.herokuapp.com">
                                             <i class="fa fa-search"></i>
                                         </a>
                                     </span>
@@ -222,7 +222,7 @@
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item development application">
                         <div class="item-content">
-                            <img src="images/portfolio/img-5.jpg" alt="">
+                            <img src="images/portfolio/dmn.png" alt="">
                             <div class="item-overlay">
                                 <div class="icons">
                                     <span class="icon link">
