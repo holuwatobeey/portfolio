@@ -1,4 +1,9 @@
 {
-    "name": "Mikkycody",
-	"description": "My personal portfolio."
+    "name": "mikkycody/portfolio",
+    "description": "My personal portfolio.",
+    "require": {
+    "sendgrid/sendgrid": "~5.0.9"
 }
+}
+
+

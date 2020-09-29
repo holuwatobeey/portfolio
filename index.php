@@ -53,24 +53,42 @@
         <!--Preloader-->
             
         <?php
-            if(isset($_POST['email'])){
-            $Name = "Name:".$_POST['name']."
-            ";
-            $Email = "Email:".$_POST['email']."
-            ";
-            $Message = "Message:".$_POST['message']."
-            ";
-            $file=fopen("contactmsg.txt", "w");
-            fwrite($file, $Name);
-            fwrite($file, $Email);
-            fwrite($file, $Message);
-            fclose($file);
+        
+        require 'vendor/autoload.php';
+        if(isset($_POST['email'])){
+            $from = new SendGrid\Email(null, $_POST['email']);
+            $subject = "New Website Request";
+            $to = new SendGrid\Email(null, "horluwatowbeey@gmail.com");
+            $content = new SendGrid\Content("text/plain", $_POST['message']);
+            $mail = new SendGrid\Mail($from, $subject, $to, $content);
+            
+            $apiKey = getenv('SENDGRID_API_KEY');
+            $sg = new \SendGrid($apiKey);
+            
+            $response = $sg->client->mail()->send()->post($mail);
+            echo $response->statusCode();
+            echo $response->headers();
+            echo $response->body();
+        }
+
+            // if(isset($_POST['email'])){
+            // $Name = "Name:".$_POST['name']."
+            // ";
+            // $Email = "Email:".$_POST['email']."
+            // ";
+            // $Message = "Message:".$_POST['message']."
+            // ";
+            // $file=fopen("contactmsg.txt", "w");
+            // fwrite($file, $Name);
+            // fwrite($file, $Email);
+            // fwrite($file, $Message);
+            // fclose($file);
                 
-            echo '<script type="text/javascript">
-               myFunction();
-              </script>';
+            // echo '<script type="text/javascript">
+            //    myFunction();
+            //   </script>';
                
-            }
+            // }
         ?>
         
         
