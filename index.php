@@ -225,7 +225,6 @@
                     </div>
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item design">
-<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/havimar.png" alt="">
                             <div class="item-overlay">
@@ -237,17 +236,11 @@
                                     </span>
                                 </div>
                             </div>
-=======
-                        <div class="item-conten">
-                           <a target="_blank" href="http://havimarheadstart.com"> <img src="images/portfolio/img-2.jpg" alt=""></a>
-                           
->>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                         </div>
                     </div>
                    
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item development application">
-<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/dmn.png" alt="">
                             <div class="item-overlay">
@@ -258,11 +251,6 @@
                                         </a>
                                     </span>
                                 </div>
-=======
-                        <div class="item-conten">
-                           <a target="_blank" href="https://demusicnavigators.herokuapp.com/"> <img src="images/portfolio/img-5.jpg" alt=""></a>
-                           
->>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                             </div>
                         </div>
                     </div>
