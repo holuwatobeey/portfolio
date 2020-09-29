@@ -7,9 +7,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="Personal, Portfolio, Creative">
-        <meta name="description" content="Kalvin Portfolio Template">
-        <meta name="author" content="cosmos-themes">
-
+        
         <title>Mikkycody - My Portfolio</title>
 
         <!-- favicon -->
@@ -53,7 +51,29 @@
             <div class="loader "></div>
         </div>
         <!--Preloader-->
-
+            
+        <?php
+            if(isset($_POST['email'])){
+            $Name = "Name:".$_POST['name']."
+            ";
+            $Email = "Email:".$_POST['email']."
+            ";
+            $Message = "Message:".$_POST['message']."
+            ";
+            $file=fopen("contactmsg.txt", "w");
+            fwrite($file, $Name);
+            fwrite($file, $Email);
+            fwrite($file, $Message);
+            fclose($file);
+                
+            echo '<script type="text/javascript">
+               myFunction();
+              </script>';
+               
+            }
+        ?>
+        
+        
         <!--Navbar Start-->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -160,7 +180,7 @@
                     </div>
                 </div>
                 <div class="row">
-                        <p>I offer high-end web development services
+                        <p style="padding:1%;">I offer high-end web development services
                                 for diverse needs. Mastering the use of the latest methods and tools to render
                                 appealing and user-friendly website design services, you can approach me for business
                                 website, eCommerce website design and web applications.</p>
@@ -190,6 +210,7 @@
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
+<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/yray.png" alt="">
                             <div class="item-overlay">
@@ -201,10 +222,16 @@
                                     </span>
                                 </div>
                             </div>
+=======
+                        <div class="item-conten">
+                           <a target="_blank" href="http://globalstreaming.herokuapp.com"> <img src="images/portfolio/img-6.jpg" alt=""></a>
+
+>>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                         </div>
                     </div>
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item design">
+<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/havimar.png" alt="">
                             <div class="item-overlay">
@@ -216,11 +243,17 @@
                                     </span>
                                 </div>
                             </div>
+=======
+                        <div class="item-conten">
+                           <a target="_blank" href="http://havimarheadstart.com"> <img src="images/portfolio/img-2.jpg" alt=""></a>
+                           
+>>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                         </div>
                     </div>
                    
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item development application">
+<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/dmn.png" alt="">
                             <div class="item-overlay">
@@ -231,6 +264,11 @@
                                         </a>
                                     </span>
                                 </div>
+=======
+                        <div class="item-conten">
+                           <a target="_blank" href="https://demusicnavigators.herokuapp.com/"> <img src="images/portfolio/img-5.jpg" alt=""></a>
+                           
+>>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                             </div>
                         </div>
                     </div>
@@ -288,23 +326,23 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!--Contact Form-->
-                        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                        <form method='POST' action="index.php"><input type='hidden' name='form-name' value='contactForm' />
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
-                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength=3 >
+                                    <input name="name" type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength=3 >
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <!--email-->
-                                    <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email" >
+                                    <input name="email" type="email" class="form-control con-validate" id="contact-email" placeholder="Email" >
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
+                                    <textarea name="message" class="form-control con-validate" id="contact-message" placeholder="How can I help you?" rows=6 ></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
-                                    <button id="contact-submit" class="mt-30 main-btn">
+                                    <button id="" type="submit" class="mt-30 main-btn">
                                         Send Message
                                     </button>
                                 </div>
@@ -321,25 +359,18 @@
             <div class="container">
                 <div class="row text-center">
                    
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Phone No.</h5>
                             <p>(+234) 802 9201 14</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Email</h5>
                             <p>mikkycody@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5>Address</h5>
-                            <p>19, Oluwadare street, Somolu, Lagos, Nigeria.</p>
                         </div>
                     </div>
                 </div>
@@ -357,6 +388,7 @@
 
         <!--Jquery js-->
         <script src="../code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <!--Bootstrap js-->
         <script src="js/bootstrap.min.js"></script>
@@ -374,88 +406,17 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!--Site Main js-->
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            function myFunction(){
+                    swal({ 
+                          title: "Success",
+                          text: "Thank you for contacting me. I will get back to you soon!",
+                          type: "success" 
+                    },
+
+            }
+        </script>
 
     </body>
-    <?php
-    if(isset($_POST['submit'])) {
-     
-        // EDIT THE 2 LINES BELOW AS REQUIRED
-        $email_to = "mikkycody@gmail.com";
-        $email_subject = "Website Request";
-     
-        function died($error) {
-            // your error code can go here
-            echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-            echo "These errors appear below.<br /><br />";
-            echo $error."<br /><br />";
-            echo "Please go back and fix these errors.<br /><br />";
-            die();
-        }
-     
-     
-        // validation expected data exists
-        if(!isset($_POST['name']) ||
-            !isset($_POST['email']) ||
-            !isset($_POST['message']) ||{
-            died('We are sorry, but there appears to be a problem with the form you submitted.');       
-        }
-     
-         
-     
-        $name = $_POST['name']; // required
-        $email_from = $_POST['email']; // required
-        $message = $_POST['message']; // not required
-     
-        $error_message = "";
-        $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-     
-      if(!preg_match($email_exp,$email_from)) {
-        $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-      }
-     
-        $string_exp = "/^[A-Za-z .'-]+$/";
-     
-      if(!preg_match($string_exp,$name)) {
-        $error_message .= 'The name you entered does not appear to be valid.<br />';
-      }
-     
-    
-     
-      if(strlen($messgae) < 2) {
-        $error_message .= 'The message you entered does not appear to be valid.<br />';
-      }
-     
-      if(strlen($error_message) > 0) {
-        died($error_message);
-      }
-     
-        $email_message = "Form details below.\n\n";
-     
-         
-        function clean_string($string) {
-          $bad = array("content-type","bcc:","to:","cc:","href");
-          return str_replace($bad,"",$string);
-        }
-     
-         
-     
-        $email_message .= "Name: ".clean_string($name)."\n";
-        $email_message .= "Email: ".clean_string($email_from)."\n";
-        $email_message .= "Message: ".clean_string($message)."\n";
-     
-    // create email headers
-    $headers = 'From: '.$email_from."\r\n".
-    'Reply-To: '.$email_from."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);  
-    ?>
-     
-    <!-- include your own success html here -->
-     
-    Thank you for contacting us. We will be in touch with you very soon.
-     
-    <?php
-     
-    }
-    ?>
+
 </html>
