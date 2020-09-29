@@ -210,7 +210,6 @@
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
-<<<<<<< HEAD
                         <div class="item-content">
                             <img src="images/portfolio/yray.png" alt="">
                             <div class="item-overlay">
@@ -222,11 +221,6 @@
                                     </span>
                                 </div>
                             </div>
-=======
-                        <div class="item-conten">
-                           <a target="_blank" href="http://globalstreaming.herokuapp.com"> <img src="images/portfolio/img-6.jpg" alt=""></a>
-
->>>>>>> d4f63377e83d10dd15e1f67029283fb717080ce3
                         </div>
                     </div>
                     <!--Portfolio Item-->
