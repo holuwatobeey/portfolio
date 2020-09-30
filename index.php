@@ -227,7 +227,7 @@
                 </div>
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application">
+                    <div class="col-lg-6 col-md-6 item application">
                         <div class="item-content">
                             <img src="images/portfolio/yray.png" alt="">
                             <div class="item-overlay">
@@ -242,7 +242,7 @@
                         </div>
                     </div>
                     <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item design">
+                    <!-- <div class="col-lg-4 col-md-6 item design">
                         <div class="item-content">
                             <img src="images/portfolio/havimar.png" alt="">
                             <div class="item-overlay">
@@ -255,10 +255,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                    
                     <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item development application">
+                    <div class="col-lg-6 col-md-6 item development application">
                         <div class="item-content">
                             <img src="images/portfolio/dmn.png" alt="">
                             <div class="item-overlay">
