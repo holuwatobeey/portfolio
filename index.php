@@ -228,17 +228,19 @@
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
                     <div class="col-lg-6 col-md-6 item application">
-                        <div class="item-content">
-                            <img src="images/portfolio/yray.png" alt="">
-                            <div class="item-overlay">
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="https://yrayfx.com">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="item-cotent">
+                        <a  target="_blank" href="https://pointoutcourier.com.ng">
+                        <img src="images/portfolio/pointout.jpg" alt="">
+                        </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 item application">
+                        <div class="item-cotent">
+                        <a  target="_blank" href="https://yrayfx.com">
+                        <img src="images/portfolio/yray.png" alt="">
+                        </a>
+                           
                         </div>
                     </div>
                     <!--Portfolio Item-->
@@ -259,17 +261,12 @@
                    
                     <!--Portfolio Item-->
                     <div class="col-lg-6 col-md-6 item development application">
-                        <div class="item-content">
-                            <img src="images/portfolio/dmn.png" alt="">
-                            <div class="item-overlay">
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="https://demusicnavigators.herokuapp.com/">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="item-cotent">
+                        <a  target="_blank" href="https://demusicnavigators.herokuapp.com/">
+                        <img src="images/portfolio/dmn.png" alt="">
+                        </a>
+                           
+     
                         </div>
                     </div>
                    
